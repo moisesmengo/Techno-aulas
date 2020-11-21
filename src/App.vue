@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header></Header>
-    <router-view></router-view>
+    <router-view class="container"></router-view>
   </div>
 </template>
 <script>
@@ -25,5 +25,10 @@ a {
   font-weight: bold;
   text-decoration: none;
   color: rgb(36, 48, 59);
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 </style>

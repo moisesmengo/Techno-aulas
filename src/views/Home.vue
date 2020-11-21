@@ -1,13 +1,22 @@
 <template>
   <div class="home">
-    <h1>Home</h1>
+    <div v-if="loading">
+      CARREGANDO...
+    </div>
+    <div v-if="api">
+      <h1>Home</h1>
+      <p>{{api}}</p>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
-export default {
-  name: "Home",
-};
+  import fetchData from "../mixins/fetchData";
+  export default {
+    name: "Home",
+    mixins: [fetchData],
+    created() {
+      this.fetchData("/home")
+    },
+  };
 </script>
