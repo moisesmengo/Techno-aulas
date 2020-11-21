@@ -1,5 +1,14 @@
 # app-aulas
 
+Projeto que simula uma aplicação de aulas online. A finalidade do projeto é um
+estudo sobre os principais conceitor do vue-router.
+
+## Tecnologias utilizadas
+- Vuejs
+- Vue-router
+- Json-server
+- Css
+
 ## Project setup
 ```
 npm install
