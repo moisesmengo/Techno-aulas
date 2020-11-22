@@ -1,6 +1,6 @@
 <template>
   <div class="contato">
-    <div v-if="loading">CARREGANDO...</div>
+    <div v-if="loading"><Loading /></div>
     <div v-if="api">
       <h1>Contato</h1>
       <p>{{ api }}</p>
